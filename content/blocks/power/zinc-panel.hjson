@@ -1,0 +1,13 @@
+type: SolarGenerator
+name: "Zinc Solar Panel"
+description: "Transforms sunlight into a small amount of energy."
+size: 1
+health: 50
+powerProduction: 0.36
+category: power
+
+requirements: [
+  zinc/8
+  icopper/5
+  Glass/7
+]

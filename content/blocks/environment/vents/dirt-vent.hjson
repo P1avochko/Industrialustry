@@ -1,0 +1,28 @@
+type: SteamVent
+name: Dirt vent 
+blendGroup: dirt
+parent: dirt
+effectSpacing: 25
+variants: 1
+
+effect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      lifetime: 60
+      sizeInterp: slope
+      length: 15
+      baseLength: 3
+      sizeFrom: 3
+      sizeTo: 5
+      colorFrom: "4A271F"
+      colorTo: "67372cbd"
+      layer: 61.8
+      cone: 360
+    }
+  ]
+ }
+ attributes: {
+  steam: 1
+}

@@ -1,0 +1,21 @@
+type: Wall
+
+size: 1
+health: 250
+
+category: defense
+requirements: [
+  icopper/8
+]
+research: {
+  parent: core-era1
+  requirements: [
+    icopper/55
+  ]
+  objectives: [
+  {
+  type: Produce
+  content: icopper
+  }
+  ]
+}

@@ -1,0 +1,48 @@
+type: PowerTurret
+
+size: 2
+health: 450
+range: 104
+reload: 120
+
+targetAir: false
+targetGround: true
+
+shoot:{
+ shots: 5
+ }
+consumes: {
+  power: 8.0
+}
+
+shootType: {
+  type: LightningBulletType
+  damage: 30
+  lightningLength: 13
+  lightningLengthRand: 6
+  lightningColor: "a9d8ff"
+  shootEffect: sparkShoot
+  hitEffect: hitLancer
+}
+outline: false
+
+category: turret
+requirements: [
+  zinc/70
+  icopper/120
+  aluminium/90
+]
+research: {
+  parent: simple-turret
+  requirements: [
+    icopper/550
+    zinc/400
+    aluminium/475
+  ]
+  objectives: [
+    {
+      type: Produce
+      content: zinc
+    }
+  ]
+}

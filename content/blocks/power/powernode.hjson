@@ -1,0 +1,31 @@
+type: PowerNode
+
+size: 1
+health: 35
+
+laserRange: 4
+maxNodes: 6
+squareSprite: false
+
+laserColor1: e38b39
+laserColor2: 975517
+
+category: power
+
+requirements: [
+  icopper/5
+  aluminium/2
+]
+research: {
+  parent: underground-turbine
+  requirements: [
+    icopper/150
+    aluminium/70
+  ]
+  objectives: [
+    {
+    type: produce
+    content: aluminium
+    }
+  ]
+}

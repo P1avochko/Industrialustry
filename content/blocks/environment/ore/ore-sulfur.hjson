@@ -1,0 +1,5 @@
+type: oreBlock
+name: Sulfur ore
+itemDrop: sulfur
+variants: 3
+color: d6c232

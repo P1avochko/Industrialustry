@@ -1,0 +1,58 @@
+type: hover
+
+health: 200
+armor: 1
+hitSize: 8
+
+speed: 1.6
+accel: 0.1
+drag: 0.06
+rotateSpeed: 8
+omniMovement: true
+
+hovering: true
+shadowElevation: 0.2
+canDrown: false
+targetAir: false
+
+outlineColor: "2D3039"
+
+parts: [
+{
+    type: HoverPart
+    x: 0
+    y: 0
+    radius: 10
+    phase: 60
+    stroke: 3
+    layerOffset: -0.001
+    color: "bf92f9"
+}
+]
+weapons: [
+  {
+    name: "Vector-split"
+    x: -1
+    y: 0
+    reload: 20
+    alternate: true
+    mirror: true
+    rotate: true
+    shootSound: lasershoot
+    shootX: 5
+    shootY: 1
+    bullet: {
+      type: BasicBulletType
+      damage: 20
+      width: 5
+      height: 7
+      lifeTime: 60
+      speed: 3
+      frontColor: "bf92f9"
+      backColor: "665c9f"
+    }
+  }
+]
+research: {
+  parent: Specialist-constructor
+}

@@ -1,0 +1,66 @@
+type: AttributeCrafter
+name: Gas tower
+description: "Pumps out natural gas from special vents."
+health: 350
+size: 3
+attribute: gas
+
+minEfficiency: 1
+maxBoost: 1
+displayEfficiencyScale: 0.1111111111111111
+displayEfficiency: true
+
+consumes: {
+  power: 1
+}
+outputLiquid: natural-gas/0.3
+liquidCapacity: 36
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: "-bottom"
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: natural-gas
+      padding: 3
+    }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawRegion
+      suffix: "-pump"
+      rotateSpeed: 2.5
+      rotate: 45
+    }
+    {
+      type: DrawRegion
+      suffix: "-top"
+    }
+  ]
+}
+hasItems: false
+category: production
+requirements: [
+  brass/20 
+  icopper/60
+  zinc/30
+]
+research: {
+  parent: copper-drill
+  requirements: [
+    brass/350
+    icopper/800
+    zinc/500
+  ]
+  objectives: [
+    {
+      type: produce
+      content: brass
+    }
+  ]
+}

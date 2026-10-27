@@ -1,0 +1,18 @@
+type: Liquid
+
+gas: true
+color: "a6f1ff"
+
+flammability: 1.2
+explosiveness: 0.6
+temperature: 0.4
+viscosity: 0.05
+research: {
+  parent: icopper
+  objectives: [
+    {
+      type: produce
+      content: natural-gas
+    }
+  ]
+}

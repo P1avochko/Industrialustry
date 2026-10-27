@@ -1,0 +1,43 @@
+type: GenericCrafter
+name: "Furnace"
+description: "."
+size: 2
+health: 150
+
+hasItems: true
+itemCapacity: 10
+
+consumes: { 
+  items: [
+    Quartz/2 
+    sulfur/1 
+    ] 
+  }
+outputItems: [
+  Glass/1 
+  ]
+
+category: crafting
+requirements: [
+  icopper/50 
+  zinc/40
+  Quartz/25
+]
+
+research: {
+  parent: brass-kiln
+  requirements: [
+    icopper/140
+    zinc/160
+  ]
+    objectives: [
+    {
+      type: Produce
+      content: Quartz
+    }
+    {
+      type: Produce
+      content: zinc
+    }
+  ]
+}

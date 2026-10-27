@@ -1,0 +1,8 @@
+type: OreBlock
+name: Aluminum ore 
+itemDrop: aluminium
+variants: 3
+color: A9ACB6
+tier: 1
+hardness: 1
+oreDefault: true

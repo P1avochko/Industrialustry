@@ -1,0 +1,20 @@
+type: LiquidBridge
+
+health: 50
+size: 1
+range: 3
+
+hasPower: false
+liquidCapacity: 15
+
+category: liquid
+requirements: [
+  icopper/10
+  aluminium/5
+]
+research: tube
+researchCost: [
+  icopper/120
+  aluminium/70
+]
+shownPlanets: [ octanium ]

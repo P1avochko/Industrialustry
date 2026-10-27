@@ -1,0 +1,17 @@
+type: OverflowGate
+name: "Copper inverted overflow"
+invert: true
+health: 120
+
+category: distribution
+requirements: [
+  icopper/8
+  aluminium/4
+]
+research: {
+  parent: overflow
+  requirements: [
+    icopper/150
+    aluminium/80
+  ]
+}

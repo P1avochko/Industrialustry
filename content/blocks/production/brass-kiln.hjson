@@ -1,0 +1,57 @@
+type: GenericCrafter
+size: 3
+squareSprite: false
+
+craftTime: 120
+
+consumes: {
+  power: 3
+  items: [
+    icopper/2
+    zinc/1
+  ]
+}
+outputItems: [
+  brass/1
+]
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: "-bottom"
+    }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawWarmupRegion
+      suffix: "-top"
+      sinMag: 0.2
+      sinScl: 7.5
+    }
+  ]
+}
+
+
+
+category: crafting
+requirements: [
+  icopper/80
+  aluminium/50
+]
+research: {
+  parent: zinc-synthesizer
+  requirements: [
+    icopper/500
+    zinc/200
+    aluminium/400
+  ]
+  objectives: [
+    {
+      type: OnSector
+      preset: frontier-horizon
+    }
+  ]
+}

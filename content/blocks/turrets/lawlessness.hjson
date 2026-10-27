@@ -1,0 +1,78 @@
+type: ItemTurret
+name: Lawlessnes
+description: "."
+health: 360
+size: 2
+range: 128
+rotatespeed: 10
+reload: 45
+recoil: 3
+
+shots: 8
+shotDelay: 60
+innacuracy: 15
+
+ammoTypes: {
+  zinc: {
+    type: BasicBulletType
+    speed: 8
+    lifetime: 16
+    damage: 90
+    knockback: 2
+    width: 18
+    height: 13
+    hitColor: "849db7"
+    backColor: "849db7"
+    frontColor: "afc2d6"
+    buildingDamageMultiplier: 0.2
+  }
+  iron: {
+    type: BasicBulletType
+    speed: 2
+    lifetime: 64
+    damage: 260
+    knockback: 8
+    width: 24
+    height: 20 
+    hitColor: "a85538"
+    backColor: "a85538"
+    frontColor: "e68c6d"
+    buildingDamageMultiplier: 0.01
+    reloadMultiplier: 0.8
+
+    fragBullets: 3
+    fragCone: 360
+    fragVelocityMin: 1
+    fragVelocityMax: 3
+    
+    fragBullet: {
+      type: BasicBulletType
+      damage: 10
+      speed: 2
+      lifetime: 4
+      width: 10
+      height: 12
+      }
+  }
+}
+
+category: turret 
+requirements: [
+  iron/200
+  zinc/350
+  aluminium/100
+]
+resarch: {
+  parent: simple-turret
+  requirements: [
+    iron/1000
+    aluminium/2200
+    zinc/1500
+  ]
+  objectives: [
+    {
+      type: produce
+      content: iron
+    }
+  ]
+}

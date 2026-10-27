@@ -1,0 +1,22 @@
+type: Wall
+name: Large copper wall
+description: "Protects structures from enemy projectiles."
+size: 2
+health: 1000
+
+category: defense
+requirements: [
+  icopper/32
+]
+research: {
+  parent: icopper-wall
+  requirements: [
+    icopper/1000
+  ]
+  objectives: [
+  {
+  type: Produce
+  content: icopper
+  }
+  ]
+}

@@ -1,0 +1,6 @@
+type: item
+hardness: 1
+color: A9ACB6
+cost: 0.7
+research: icopper
+shownPlanets: [octanium]

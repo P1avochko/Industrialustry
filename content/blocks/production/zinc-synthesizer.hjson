@@ -1,0 +1,56 @@
+type: GenericCrafter
+size: 2
+health: 350
+
+ambientSound: loopSmelter
+ambientSoundVolume: 0.12
+
+consumes: {
+  power: 1
+    items: [
+      sphalerite/3
+    ]
+}
+outputItems: [
+  zinc/1
+]
+category: crafting
+requirements: [
+  icopper/35
+  aluminium/30
+]
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawCrucibleFlame
+      flameRad: 0.5
+      circleSpace: 0.5
+      particleSize: 1.2
+    }
+    {
+       type: DrawWarmupRegion
+      suffix: "-top"
+      sinMag: 0.5
+      sinScl: 10
+      color: ffffff
+    }
+  ]
+}
+research: {
+  parent: core-era1
+  requirements: [
+    icopper/450
+    aluminium/ 400
+    ]
+  objectives: [
+      {
+        type: OnSector
+        preset: sphalerite-ridges
+      }
+    ]
+}

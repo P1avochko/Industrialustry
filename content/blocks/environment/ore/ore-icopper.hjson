@@ -1,0 +1,7 @@
+type: OreBlock
+name: "Copper ore"
+itemDrop: icopper
+variants: 3
+color: 6f3c0d
+hardness: 1
+oreDefault: true

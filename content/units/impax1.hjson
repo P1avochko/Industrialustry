@@ -1,0 +1,66 @@
+type: tank
+name: Impax
+
+health: 1350
+armor: 6
+hitSize: 18
+
+speed: 0.8
+rotateSpeed: 4.4
+faceTarget: false
+omniMovement: false
+
+targetAir: false
+itemCapacity: 0
+alwaysShootWhenMoving: true
+
+abilities: [
+    {
+    type: ShieldArcAbility
+    radius: 30
+    angle: 75
+    width: 4
+    y: -18
+    cooldown: 600
+    regen: 1
+    max: 240
+    chanceDeflect: 0.8
+  }
+]
+
+weapons: [
+  {
+    name: "impax-weapon"
+    x: 0
+    y: 0
+    rotate: true
+    rotateSpeed: 4.4
+    mirror: false
+    recoil: 2
+    shootSound: shootBeam
+    shootStatus: slow
+    shootStatusDuration: 16
+    shootX: 0
+    shootY: 3
+    ejectEffect: none
+    continuous: true
+    alwaysContinuous: true
+    bullet: {
+      type: ContinuousFlameBulletType
+      flareLength: 0
+      damage: 20
+      width: 3
+      length: 120
+      pierce: true
+      pierceArmor: false
+      colors: [
+        7debff,
+        90eeff,
+        a6f1ff,
+        e1faff
+      ]
+      lightColor: a6f1ff
+      hitColor: a6f1ff
+    }
+  }
+]

@@ -1,0 +1,22 @@
+type: wall
+name: Large iron wall
+description: "Protects structures from enemy projectiles."
+size: 2
+health: 2300
+
+category: defense
+requirements: [
+  iron/24
+]
+research: {
+  parent: iron-wall
+  requirements: [
+    iron/700
+  ]
+  objectives: [
+  {
+  type: Produce
+  content: iron
+  }
+  ]
+}

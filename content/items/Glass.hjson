@@ -1,0 +1,20 @@
+type: item
+name: Glass
+description: "A brittle and transparent material used in pipes and liquid storage vessels."
+color: ffffff00
+cost: 5
+
+flammability: 0.0
+explosiveness: 0.0
+radioactivity: 0.0
+charge: 0.0
+research: 
+{
+  parent: Quartz
+  objectives: [
+    {
+      type: Produce
+      content: Glass
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+type: Duct
+name: "Copper transport pipe"
+description: "Transports items forward."
+health: 45
+speed: 15
+
+category: distribution
+requirements: [
+  icopper/1
+]
+research: {
+  parent: core-era1
+  requirements: [
+    icopper/5
+  ]
+  objectives: [
+  {
+  type: Produce
+  content: icopper
+  }
+  ]
+}
+bridgeReplacement: copper-bridge
+junctionReplacement: copper-junction

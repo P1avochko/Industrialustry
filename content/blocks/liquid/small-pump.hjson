@@ -1,0 +1,22 @@
+type: pump
+
+size: 1
+health: 40
+pumpAmount: 0.2
+liquidCapacity: 12
+squareSprite: false
+
+category: liquid
+requirements: [
+  zinc/15
+  aluminium/5
+  icopper/25
+]
+research: {
+  parent: tube
+  requirements: [
+    zinc/300
+    aluminium/430
+    icopper/550
+  ]
+}

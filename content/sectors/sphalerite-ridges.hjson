@@ -1,0 +1,16 @@
+type: SectorPreset
+
+planet: octanium
+sector: 95
+difficulty: 3
+captureWave: 15
+
+research: {
+  parent: first-station
+  objectives: [
+    {
+      type: SectorComplete
+      preset: first-station
+    }
+  ]
+}

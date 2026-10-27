@@ -1,0 +1,83 @@
+type: ItemTurret
+
+size: 1
+health: 150
+range: 88
+reload: 25
+recoil: 1.5
+shootSound: shoot
+
+shoot: {
+shots: 2
+shotDelay: 15
+firstShootDelay: 15
+innacuracy: 4
+}
+
+ammoTypes: {
+  icopper: {
+    type: BasicBulletType
+    damage: 15
+    speed: 8
+    lifetime: 11
+    width: 5
+    height: 7
+    
+    fragBullets: 2
+    fragCone: 120
+    fragVelocityMin: 2.5
+    fragVelocityMax: 4
+
+    fragBullet: {
+      type: BasicBulletType
+      damage: 3
+      speed: 5
+      lifetime: 1
+      width: 2
+      height: 3
+    }
+  }
+    aluminium: {
+      type: BasicBulletType
+      damage: 20
+      speed: 11
+      lifetime: 8
+      width: 7
+      height: 10
+      reloadMultiplier: 1.1
+      color: A9ACB6
+
+      fragBullets: 3
+      fragCone: 360
+      fragVelocityMin: 3.2
+      fragVelocityMax: 5
+      fragBullet: {
+        type: BasicBulletType
+        damage: 4
+        speed: 2
+        lifetime: 4
+        width: 3
+        height: 5
+        color: A9ACB6
+      }
+    }
+}
+
+category: turret
+requirements: [
+  icopper/50
+  aluminium/35
+]
+research: {
+  parent: core-era1
+  requirements: [
+    icopper/150
+    aluminium/85
+  ]
+  objectives: [
+    {
+      type: Produce
+      content: icopper
+    }
+  ]
+}

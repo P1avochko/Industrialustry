@@ -1,0 +1,18 @@
+type: Sorter
+name: Simple-sorter
+description: "."
+size: 1
+health: 100
+
+category: distribution
+requirements: [
+  icopper/7
+  aluminium/3
+]
+research: {
+  parent: slow-router
+  requirements: [
+    icopper/120
+    aluminium/70
+  ]
+}

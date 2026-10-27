@@ -1,0 +1,6 @@
+type: item
+color: "a85538"
+hardness: 3
+cost: 1.0
+research: brass
+shownPlanets: [octanium]

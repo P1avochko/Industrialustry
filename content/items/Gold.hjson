@@ -1,0 +1,12 @@
+type: item
+name: Gold
+description: "A heavy yet soft material is used in precision electronics."
+color: "ffd700"
+
+
+charge: 0.8
+flammability: 0.0
+explosiveness: 0.0
+radioactivity: 0.0
+cost: 40
+oreDefault: true

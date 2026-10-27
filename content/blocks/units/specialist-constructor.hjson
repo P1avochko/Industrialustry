@@ -1,0 +1,46 @@
+type: UnitFactory
+
+size: 3
+health: 450
+
+consumes: {
+  power: 5.0
+  liquids: [
+    natural-gas/0.4
+  ]
+}
+
+plans: [
+  {
+    unit: vector
+    time: 1200
+    requirements: [
+      brass/30
+      zinc/50
+      Glass/20
+    ]
+  }
+]
+
+category: units
+requirements: [
+  brass/100
+  Glass/60
+  zinc/140
+  icopper/250
+]
+research: {
+  parent: assault-constructor
+  requirements: [
+    Glass/450
+    brass/700
+    zinc/850
+    icopper/1000
+  ]
+  objectives: [
+    {
+    type: produce
+    content: Glass
+    }
+  ]
+}

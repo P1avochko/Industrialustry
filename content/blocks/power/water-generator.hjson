@@ -1,0 +1,58 @@
+type: ConsumeGenerator
+name: Water turbine
+description: "The power generator operates based on the rotation of water within the unit, but due to constant evaporation, water must be topped up occasionally.."
+health: 320
+size: 2
+
+hasLiquids: true
+hasPower: true
+outputsPower: true
+liquidCapacity: 30
+
+powerProduction: 3.0
+
+consumes: {
+  liquid: {
+    liquid: water
+    amount: 0.1667
+  }
+}
+
+generateEffect: steam
+effectChance: 0.04
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+    type: DrawRegion
+    suffix: "-floor"
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: water
+    }
+    {
+      type: DrawRegion
+      suffix: "-bottom"
+    }
+    {
+      type: DrawRegion
+      suffix: "-turbine"
+      rotateSpeed: 2
+      rotate: 45
+    }
+    {
+      type: DrawRegion
+      suffix: "-top"
+    }
+  ]
+}
+
+category: power
+requirements: [
+  icopper/20
+  zinc/15
+  aluminium/35
+  iron/25
+]

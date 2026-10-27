@@ -1,0 +1,29 @@
+type: Drill
+name: "Copper Drill"
+description: "Mines basic resources from ore tiles."
+size: 2
+health: 100
+itemCapacity: 10
+hasLiquids: true
+
+tier: 1
+drillTime: 800
+drawMineItem: true
+liquidBoostIntensity: 1
+
+category: production
+requirements: [
+  icopper/10
+]
+research: {
+  parent: core-era1
+  requirements: [
+    icopper/50
+  ]
+  objectives: [
+    {
+      type: Produce
+      content: icopper
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+type: Duct
+name: "Smart transport pipe"
+description: "Transports items forward."
+armored: true
+health: 60
+speed: 15
+size: 1
+
+category: distribution
+requirements: [
+  icopper/2 
+  zinc/1
+]
+research: {
+  parent: Core-era1
+  requirements: [
+    icopper/200
+    zinc/150
+  ]
+  objectives: [
+  {
+  type: Produce
+  content: zinc
+  }
+  ]
+}
+bridgeReplacement: copper-bridge
+junctionReplacement: copper-junction

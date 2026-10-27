@@ -1,0 +1,25 @@
+type: CoreBlock
+
+health: 3750
+itemCapacity: 3500
+size: 3
+
+squareSprite: false
+alwaysUnlocked: true
+
+isFirstTier: true
+unitType: core-guardian
+unitCapModifier: 10
+
+category: effect
+requirements: [
+  aluminium/550
+  icopper/750
+]
+requiresCoreZone: true
+incinerateNonBuildable: true
+research: {
+  root: true
+  planet: octanium
+  name: Octanium
+}

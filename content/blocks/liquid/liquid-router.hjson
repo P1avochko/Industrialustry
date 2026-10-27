@@ -1,0 +1,21 @@
+type: LiquidRouter
+name: Liquid conductor
+
+health: 65
+liquidCapacity: 12
+size: 1
+
+placeableLiquid: true
+
+category: liquid
+requirements: [
+  icopper/5
+  aluminium/3
+]
+research: {
+  parent: tube
+  requirements: [
+    icopper/100
+    aluminium/100
+  ]
+}

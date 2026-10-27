@@ -1,0 +1,20 @@
+type: Router
+name: Slow router 
+description: "."
+speed: 4
+itemCapacity: 1
+requirements: [
+  icopper/5
+]
+research: {
+  parent: copper-junction
+  requirements: [
+    icopper/70
+  ]
+  objectives: [
+    {
+      type: produce
+      content: icopper
+    }
+  ]
+}

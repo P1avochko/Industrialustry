@@ -1,0 +1,16 @@
+type: LiquidJunction
+
+health: 80
+
+category: liquid
+requirements: [
+  icopper/6
+  aluminium/3
+]
+research: {
+  parent: liquid-bridge
+  requirements: [
+    aluminium/100
+    icopper/100
+  ]
+}

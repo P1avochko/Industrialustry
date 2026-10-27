@@ -1,0 +1,11 @@
+type: SectorPreset
+
+planet: octanium
+sector: 0
+difficulty: 1
+alwaysUnlocked: true
+captureWave: 5
+
+research: {
+  parent: Core-era1
+}

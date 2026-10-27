@@ -1,0 +1,24 @@
+type: ConsumeGenerator
+
+size: 1
+health: 150
+
+hasItems: true
+hasPower: true
+outputsPower: true
+
+powerProduction: 1.5
+itemDuration: 200
+
+consumes: {
+  items: [
+    sulfur/1
+  ]
+}
+
+category: power
+requirements: [
+  icopper/25
+  aluminium/20
+  zinc/15
+]

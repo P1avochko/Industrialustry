@@ -1,0 +1,15 @@
+name: "industrialustry"
+displayName: "Industrialustry"
+author: "P1avochka"
+description: '''Industrialustry is a mod created from scratch, without any prior knowledge of coding or drawing.
+As of now, the mod adds:
+- 32 blocks; 
+- three classes of Tier 1 units;
+- 5 "usable" items;
+- 1 gas;
+- 3 sectors.
+The mod is currently in an alpha stage, and the creator is actively honing their coding and spriting skills.
+As a result, the gameplay — while limited — is nonetheless enjoyable.
+'''
+version: "alpha"
+minGameVersion: "146"

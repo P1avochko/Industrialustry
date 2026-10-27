@@ -1,0 +1,28 @@
+type: SteamVent
+name: Gas dirt vent  
+blendGroup: dirt
+parent: dirt
+effectSpacing: 30
+variants: 1
+
+effect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      lifetime: 60
+      sizeInterp: slope
+      length: 15
+      baseLength: 3
+      sizeFrom: 3
+      sizeTo: 5
+      colorFrom: "a6f1ff"
+      colorTo: "a6f1ff9d"
+      layer: 61.8
+      cone: 360
+    }
+  ]
+ }
+ attributes: {
+  natural-gas: 1
+}

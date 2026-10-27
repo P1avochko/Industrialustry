@@ -1,0 +1,38 @@
+type: UnitFactory
+name: Mech constructor
+
+size: 3
+health: 770
+
+consumes: {
+  power: 6.0
+  liquids: [
+    natural-gas/0.6
+  ]
+}
+
+plans: [
+  {
+    unit: strider
+    time: 3600
+    requirements: [
+      zinc/55
+      brass/35
+      iron/55
+    ]
+  }
+]
+category: units
+requirements: [
+  brass/220
+  zinc/245
+  iron/270
+]
+research: {
+  parent: specialist-constructor
+  requirements: [
+    brass/2500
+    zinc/2650
+    iron/3000
+  ]
+}

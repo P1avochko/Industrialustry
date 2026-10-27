@@ -1,0 +1,6 @@
+type: Item
+hardness: 1
+color: "975517"
+cost: 0.5
+research: core-era1
+shownPlanets: [ octanium ]

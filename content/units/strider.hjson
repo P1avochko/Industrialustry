@@ -1,0 +1,47 @@
+type: legs
+name: Strider
+description: "A Tier 1 unit of the arachnid class."
+health: 400
+speed: 1.6
+armor: 6
+hitSize: 10
+
+legCount: 6
+legLength: 10
+legSpeed: 0.3
+legGroupSize: 3
+allowLegStep: true
+hovering: true
+
+weapons: [
+  {
+    name: strider-wpn 
+    reload: 30
+    mirror: true
+    x: 0
+    y: 0
+    shootX: 4
+    shootY: 2.5
+    bullet: {
+      type: BasicBulletType
+      damage: 50
+      width: 8
+      heigth: 4
+      lifeTime: 20
+      speed: 4
+
+      fragBullets: 6
+      fragCone: 180
+      FragVelocityMin: 0.1
+      FragVelocityMax: 0.5 
+
+      fragBullet: {
+        type: LightningBulletType
+        damage: 5
+        lightningLength: 5
+        lightningLengthRand: 2
+        lightningColor: "7dc4ff"
+      }
+    }
+  }
+]

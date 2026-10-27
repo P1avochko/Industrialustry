@@ -1,0 +1,38 @@
+type: UnitFactory
+
+size: 3
+health: 800
+
+consumes: {
+  power: 4.0
+  liquids: [
+    natural-gas/0.3
+  ]
+}
+
+plans: [
+  {
+    unit: charge
+    time: 1800
+
+    requirements: [
+      brass/20
+      aluminium/45
+    ]
+  }
+]
+
+category: units
+requirements: [
+  brass/130
+  icopper/160
+  zinc/145
+]
+research: {
+  parent: core-era1
+  requirements: [
+    icopper/750
+    zinc/600
+    brass/550
+  ]
+}

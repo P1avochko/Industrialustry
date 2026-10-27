@@ -1,0 +1,15 @@
+type: OverflowGate
+name: "Copper overflow"
+health: 120
+
+category: distribution
+requirements: [
+  icopper/8
+  aluminium/4
+]
+research: {
+  parent: copper-transport-pipe
+  requirements: [
+    icopper/150
+  ]
+}

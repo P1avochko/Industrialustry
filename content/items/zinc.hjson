@@ -1,0 +1,13 @@
+type: item
+
+color: 849db7
+
+hardness: 1
+cost: 1
+charge: 0.1
+flammability: 0.0
+explosiveness: 0.0
+radioactivity: 0.0
+
+research: sphalerite
+shownPlanets: [octanium]

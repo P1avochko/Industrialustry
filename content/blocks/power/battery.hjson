@@ -1,0 +1,22 @@
+type: Battery
+
+size: 1
+health: 100
+
+consumes: {
+  powerBuffered: 2500
+}
+
+category: power
+
+requirements: [
+  aluminium/15
+  icopper/25
+]
+research: {
+parent: powernode
+  requirements: [
+    icopper/450
+    aluminium/250
+  ]
+}

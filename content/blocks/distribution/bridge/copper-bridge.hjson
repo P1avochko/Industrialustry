@@ -1,0 +1,27 @@
+type: ItemBridge
+health: 60
+size: 1
+
+range: 3
+transportTime: 6
+
+hasPower: false
+hasItems: true
+maxItems: 3
+category: distribution
+
+requirements: [
+  icopper/5
+]
+research: {
+  parent: copper-transport-pipe
+  requirements: [
+    icopper/40
+  ]
+  objectives: [
+    {
+      type: Produce
+      content: icopper
+    }
+  ]
+}

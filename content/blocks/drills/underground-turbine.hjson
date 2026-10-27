@@ -1,0 +1,49 @@
+type: ThermalGenerator
+
+size: 3
+health: 300
+
+attribute: steam
+minEfficiency: 7
+powerProduction: 0.2222222222222222
+squareSprite: false
+displayEfficiencyScale: 0.1111111111111111
+displayEfficiency: false
+
+
+category: power
+requirements: [
+  icopper/60
+  aluminium/35
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+  {
+    type :DrawDefault
+  }
+  {
+    type: DrawRegion
+    suffix: "-rotator"
+    rotateSpeed: 10
+    rotate: 45
+  }
+  {
+    type: DrawRegion
+    suffix: "-top"
+  }
+  ]
+}
+research: {
+  parent: core-era1
+  requirements: [
+    icopper/120
+    aluminium/100
+  ]
+  objectives: [
+    {
+      type: OnSector
+      preset: sphalerite-ridges
+    }
+  ]
+}

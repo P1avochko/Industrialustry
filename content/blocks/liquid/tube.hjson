@@ -1,0 +1,26 @@
+type: conduit
+
+health: 50
+liquidCapacity: 15
+liquidPressure: 1.0
+
+category: liquid
+requirements: [
+  icopper/1
+  aluminium/1
+]
+research: {
+  parent: core-era1
+  requirements: [
+    icopper/60
+    aluminium/40
+  ]
+  objectives: [
+    {
+    type: OnSector
+    preset: frontier-horizon
+    }
+  ]
+}
+junctionReplacement: liquid-junction
+bridgeReplacement: liquid-bridge 

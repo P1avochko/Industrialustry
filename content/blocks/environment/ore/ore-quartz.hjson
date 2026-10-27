@@ -1,0 +1,5 @@
+type: OreBlock
+name: Quartz ore 
+itemDrop: Quartz
+color: F0F4F8
+variants: 3

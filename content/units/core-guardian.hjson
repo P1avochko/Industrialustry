@@ -1,0 +1,46 @@
+type: flying
+
+flying: true
+speed: 2.7
+accel: 0.1
+drag: 0.02
+rotateSpeed: 10
+
+health: 200
+armor: 1
+hitSize: 10
+lowAltitude: false
+
+canBuild: true
+buildSpeed: 0.7
+mineSpeed: 7
+mineTier: 2
+itemCapacity: 30
+controller: BuilderAI
+
+engines: {
+  x: 0
+  y: -4
+  radius: 2.5
+}
+
+weapons: [
+  {
+    name: "core-guardian-weapon"
+    x: 0
+    y: 0
+    shootX: 5
+    ShootY: 0
+    reload: 15
+    mirror: true
+    bullet: {
+      type: BasicBulletType
+      damage: 10
+      speed: 3
+      width: 5
+      height: 10
+      lifetime: 35
+      buildingDamageMultiplier: 0
+    }
+  }
+]

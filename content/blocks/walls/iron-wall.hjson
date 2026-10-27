@@ -1,0 +1,22 @@
+type: wall
+name: Iron wall
+description: "Protects structures from enemy projectiles."
+size: 1
+health: 540
+
+category: defense
+requirements: [
+  iron/6
+]
+research: {
+  parent: icopper-wall-large
+  requirements: [
+    iron/55
+  ]
+  objectives: [
+  {
+  type: Produce
+  content: iron
+  }
+  ]
+}

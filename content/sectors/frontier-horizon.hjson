@@ -1,0 +1,14 @@
+type: SectirPreset
+
+planet: octanium
+sector: 35
+difgiculty: 3
+research : {
+  parent: sphalerite-ridges
+  objectives: [
+    {
+      type: SectorComplete
+      preset: sphalerite-ridges
+    }
+  ]
+}

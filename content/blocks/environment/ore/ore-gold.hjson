@@ -1,0 +1,5 @@
+type: OreBlock
+name: Golden ore 
+itemDrop: Gold 
+color: "ffd700"
+variants: 3

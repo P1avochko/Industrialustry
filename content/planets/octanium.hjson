@@ -1,0 +1,73 @@
+generator: "PlanetGenerator"
+accessible: true
+visible: true
+alwaysUnlocked: true
+mesh: [
+    {
+    type: NoiseMesh
+    planet: Octanium
+    divisions: 5
+    seed: 52
+    radius: 1.100
+    color1: 41a036eb
+    color2: 2e6928
+    octaves: 3
+    persistence: 1.1
+    }
+]
+
+
+allowCampaignRules: true
+allowLaunchLoadout: false
+allowLaunchSchematics: false
+allowLaunchToNumbered: false
+allowLegacyLaunchPads: false
+allowSectorInvasion: false
+allowSelfSectorLaunch: false
+
+iconColor: 68c85d
+landCloudColor: 41a036eb
+hasAtmosphere: true
+
+rules: {
+ fog: false
+ staticFog: false
+ coreDestroyClear: true
+ onlyDepositCore: false
+}
+
+campaignRuleDefaults: {
+ fog: false
+ hideSpawns: false
+ rtsAI: true
+}
+
+atmosphereRadIn: 0.02
+atmosphereRadOut: 0.3
+startSector: 0
+sectorSize: 3
+parent: sun
+solarSystem: sun
+tidalLock: true
+orbitRadius: 80
+orbitTime: 3000
+orbitSpacing: 1
+radius: 1
+
+prebuildBase: true
+clearSectorOnLose: true
+defaultCore: core-era1
+enemyBuildSpeedMultiplier: 0.2
+enemyCoreSpawnReplace: false
+updateLighting: false
+
+launchCandidates: []
+itemWhitelist: [
+  "icopper",
+  "aluminium",
+  "sphalerite",
+  "zinc",
+  "sulfur",
+  "iron",
+  "brass",
+]

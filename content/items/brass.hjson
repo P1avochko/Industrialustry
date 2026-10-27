@@ -1,0 +1,12 @@
+type: item
+
+color: "d4a33b" 
+
+cost: 2
+flammability: 0.0
+explosiveness: 0.0
+radioactivity: 0.0
+charge: 0.15
+
+research: zinc
+shownPlanets: [octanium]

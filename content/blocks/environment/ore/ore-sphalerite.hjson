@@ -1,0 +1,5 @@
+type: OreBlock
+name: "Sphalerite ore"
+itemDrop: sphalerite
+variants: 3
+collor: c48d42
